@@ -203,7 +203,7 @@ namespace Brain {
 				{
 					ImGui::Begin("Brain Viewer");
 					ImGui::Text("Maybe I can put OpenCV stuff in here ");
-					ImGui::End();
+		ImGui::End();
 				}
 				ImGui::EndMenu();
 			}
