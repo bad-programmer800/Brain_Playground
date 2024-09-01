@@ -20,7 +20,11 @@ namespace Brain {
 	{
 		BR_PROFILE_FUNCTION();
 
+		cv::Mat image;
+		image = cv::imread("C:/VS_Projects/Brain_Playground/BrainPlayground/assets/textures/BP_Ep3.png", 1);
+
 		m_CheckerboardTexture = Brain::Texture2D::Create("assets/textures/Checkerboard.png");
+		m_cvSourceImageTexture = Brain::Texture2D::Create(image);
 
 		Brain::FramebufferSpecification fbSpec;
 		fbSpec.Width = 1280;
@@ -59,8 +63,9 @@ namespace Brain {
 			Brain::Renderer2D::DrawRotatedQuad({ 1.0f, 0.0f }, { 0.8f, 0.8f }, -45.0f, { 0.8f, 0.2f, 0.3f, 1.0f });
 			Brain::Renderer2D::DrawQuad({ -1.0f, 0.0f }, { 0.8f, 0.8f }, { 0.8f, 0.2f, 0.3f, 1.0f });
 			Brain::Renderer2D::DrawQuad({ 0.5f, -0.5f }, { 0.5f, 0.75f }, m_SquareColor);
-			Brain::Renderer2D::DrawQuad({ 0.0f, 0.0f, -0.1f }, { 20.0f, 20.0f }, m_CheckerboardTexture, 10.0f);
-			Brain::Renderer2D::DrawRotatedQuad({ -2.0f, 0.0f, 0.0f }, { 1.0f, 1.0f }, rotation, m_CheckerboardTexture, 20.0f);
+			//Brain::Renderer2D::DrawQuad({ 0.0f, 0.0f, -0.1f }, { 20.0f, 20.0f }, m_cvSourceImageTexture, 10.0f);
+			Brain::Renderer2D::DrawRotatedQuad({ -2.0f, 0.0f, 0.0f }, { 1.0f, 1.0f }, rotation, m_cvSourceImageTexture, 20.0f);
+			Brain::Renderer2D::DrawQuad({ 0.0f, 0.0f, -0.1f }, { 20.0f, 20.0f }, m_cvSourceImageTexture, 10.0f);
 			Brain::Renderer2D::EndScene();
 
 			Brain::Renderer2D::BeginScene(m_CameraController.GetCamera());
@@ -171,18 +176,18 @@ namespace Brain {
 		}
 		uint32_t textureID = m_Framebuffer->GetColorAttachmentRendererID();
 		ImGui::Image((void*)textureID, ImVec2{ m_ViewportSize.x, m_ViewportSize.y }, ImVec2{ 0, 1 }, ImVec2{ 1, 0 });
-		// /*
+		/*
 		{
 			cv::Mat image;
 			image = cv::imread("C:/VS_Projects/Brain_Playground/BrainPlayground/assets/textures/BP_Ep3.png");
-			if (!image.data)
+			if (!image)
 			{
 				BR_ERROR("No Image data! \n");
 			}
-			cv::namedWindow("Display Image");
-			cv::imshow("Viewport", image);
+			//cv::namedWindow("Display Image");
+			//cv::imshow("Viewport", image);
 		}
-		// */
+		*/
 		
 		
 		

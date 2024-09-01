@@ -30,4 +30,18 @@ namespace Brain {
 		return nullptr;
 	}
 
+	// BEGIN: Overload of Create()
+	Ref<Texture2D> Texture2D::Create(cv::Mat cvImage)
+	{
+		switch (Renderer::GetAPI())
+		{
+		case RendererAPI::API::None:    BR_CORE_ASSERT(false, "RendererAPI::None is currently not supported!"); return nullptr;
+		case RendererAPI::API::OpenGL:  return CreateRef<OpenGLTexture2D>(cvImage);
+		}
+
+		BR_CORE_ASSERT(false, "Unknown RendererAPI!");
+		return nullptr;
+	}
+	// END - Create texture in platform OpenGLTexture
+
 }
