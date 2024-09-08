@@ -18,8 +18,12 @@ My starting point, however, is not my own. I just changed various Hazel specific
 ## What am I working on now?
 ### August 2024
 Goals:
-1. Add OpenCV to the project
-2. Get an image to display in a window using OpenCV
+1. I need to be able to draw to multiple Framebuffers
+2. Create two texture pathways to display a before and after image in different child windows
+3. Perform some OpenCV function on the source image and display the result in a different window
 
 Accomplished:
-Nothing So far!
+1. Add OpenCV to the project
+2. Get an image to display in a window using OpenCV
+3. Create a new texture with the OpenCV image and use it on an object
+4. Created a new program layer with ImGui windows
