@@ -2,6 +2,7 @@
 #include <Brain/Core/EntryPoint.h>
 
 #include "EditorLayer.h"
+#include "AtlasLayer.h"
 
 namespace Brain {
 

@@ -16,6 +16,8 @@
 #include "Brain/Renderer/OrthographicCameraController.h"
 
 #include "Brain/ImGui/ImGuiLayer.h"
+#include "Brain/Scene/Scene.h"
+#include "Brain/Scene/Components.h"
 
 // ---Renderer------------------------
 #include "Brain/Renderer/Renderer.h"

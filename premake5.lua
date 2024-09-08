@@ -23,6 +23,7 @@ IncludeDir["Glad"] = "Brain/vendor/Glad/include"
 IncludeDir["ImGui"] = "Brain/vendor/imgui"
 IncludeDir["glm"] = "Brain/vendor/glm"
 IncludeDir["stb_image"] = "Brain/vendor/stb_image"
+IncludeDir["entt"] = "Brain/vendor/entt/include"
 
 syslibdirs {"C:/opencv/build/x64/vc16/lib"}
 includedirs {"C:/opencv/build/include"}
@@ -70,7 +71,8 @@ project "Brain"
 		"%{IncludeDir.Glad}",
 		"%{IncludeDir.ImGui}",
 		"%{IncludeDir.glm}",
-		"%{IncludeDir.stb_image}"
+		"%{IncludeDir.stb_image}",
+		"%{IncludeDir.entt}"
 	}
 
 	links 
@@ -125,7 +127,8 @@ project "Playground"
 		"Brain/vendor/spdlog/include",
 		"Brain/src",
 		"Brain/vendor",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"%{IncludeDir.entt}"
 	}
 
 	links
@@ -172,7 +175,8 @@ project "BrainPlayground"
 		"Brain/vendor/spdlog/include",
 		"Brain/src",
 		"Brain/vendor",
-		"%{IncludeDir.glm}"
+		"%{IncludeDir.glm}",
+		"%{IncludeDir.entt}"
 	}
 
 	links
