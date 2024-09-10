@@ -2,8 +2,19 @@
 
 #include <glm/glm.hpp>
 
+#include "SceneCamera.h"
+
 namespace Brain
 {
+	struct TagComponent
+	{
+		std::string Tag;
+
+		TagComponent() = default;
+		TagComponent(const TagComponent&) = default;
+		TagComponent(const std::string& tag) : Tag(tag){}
+	};
+
 	struct TransformComponent
 	{
 		glm::mat4 Transform{ 1.0f };
@@ -25,4 +36,14 @@ namespace Brain
 		SpriteRendererComponent(const glm::vec4& color) : Color(color){}
 	};
 
+
+	struct CameraComponent
+	{
+		SceneCamera Camera;
+		bool Primary = true;
+		bool FixedAspectRatio = false;
+
+		CameraComponent() = default;
+		CameraComponent(const CameraComponent&) = default;
+	};
 }

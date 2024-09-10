@@ -17,7 +17,9 @@ C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\RendererAPI.cpp;C:\VS_P
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\Shader.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\Shader.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\Texture.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\Texture.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\VertexArray.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\VertexArray.obj
+C:\VS_Projects\Brain_Playground\Brain\src\Brain\Scene\Entity.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\Entity.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Scene\Scene.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\Scene.obj
+C:\VS_Projects\Brain_Playground\Brain\src\Brain\Scene\SceneCamera.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\SceneCamera.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Platform\OpenGL\OpenGLBuffer.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\OpenGLBuffer.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Platform\OpenGL\OpenGLContext.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\OpenGLContext.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Platform\OpenGL\OpenGLFramebuffer.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\OpenGLFramebuffer.obj

@@ -1427,6 +1427,9 @@
     </ClInclude>
     <ClInclude Include="src\Brain\Scene\Scene.h" />
     <ClInclude Include="src\Brain\Scene\Components.h" />
+    <ClInclude Include="src\Brain\Scene\Entity.h" />
+    <ClInclude Include="src\Brain\Renderer\Camera.h" />
+    <ClInclude Include="src\Brain\Scene\SceneCamera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brain\Core\Application.cpp">
@@ -1520,5 +1523,7 @@
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
     <ClCompile Include="src\Brain\Scene\Scene.cpp" />
+    <ClCompile Include="src\Brain\Scene\Entity.cpp" />
+    <ClCompile Include="src\Brain\Scene\SceneCamera.cpp" />
   </ItemGroup>
 </Project>
