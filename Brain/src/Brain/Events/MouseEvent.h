@@ -1,14 +1,14 @@
 #pragma once
 
 #include "Brain/Events/Event.h"
-#include "Brain/Core/Input.h"
+#include "Brain/Core/MouseCodes.h"
 
 namespace Brain {
 
 	class MouseMovedEvent : public Event
 	{
 	public:
-		MouseMovedEvent(float x, float y)
+		MouseMovedEvent(const float x, const float y)
 			: m_MouseX(x), m_MouseY(y) {}
 
 		float GetX() const { return m_MouseX; }
@@ -30,7 +30,7 @@ namespace Brain {
 	class MouseScrolledEvent : public Event
 	{
 	public:
-		MouseScrolledEvent(float xOffset, float yOffset)
+		MouseScrolledEvent(const float xOffset, const float yOffset)
 			: m_XOffset(xOffset), m_YOffset(yOffset) {}
 
 		float GetXOffset() const { return m_XOffset; }
@@ -52,11 +52,11 @@ namespace Brain {
 	class MouseButtonEvent : public Event
 	{
 	public:
-		inline MouseCode GetMouseButton() const { return m_Button; }
+		MouseCode GetMouseButton() const { return m_Button; }
 
-		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput)
+		EVENT_CLASS_CATEGORY(EventCategoryMouse | EventCategoryInput | EventCategoryMouseButton)
 	protected:
-		MouseButtonEvent(MouseCode button)
+		MouseButtonEvent(const MouseCode button)
 			: m_Button(button) {}
 
 		MouseCode m_Button;
@@ -65,7 +65,7 @@ namespace Brain {
 	class MouseButtonPressedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonPressedEvent(MouseCode button)
+		MouseButtonPressedEvent(const MouseCode button)
 			: MouseButtonEvent(button) {}
 
 		std::string ToString() const override
@@ -81,7 +81,7 @@ namespace Brain {
 	class MouseButtonReleasedEvent : public MouseButtonEvent
 	{
 	public:
-		MouseButtonReleasedEvent(MouseCode button)
+		MouseButtonReleasedEvent(const MouseCode button)
 			: MouseButtonEvent(button) {}
 
 		std::string ToString() const override

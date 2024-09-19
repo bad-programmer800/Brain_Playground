@@ -143,11 +143,13 @@
   <ItemGroup>
     <ClInclude Include="src\AtlasLayer.h" />
     <ClInclude Include="src\EditorLayer.h" />
+    <ClInclude Include="src\Panels\SceneHierarchyPanel.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\AtlasLayer.cpp" />
     <ClCompile Include="src\BrainPlaygroundApp.cpp" />
     <ClCompile Include="src\EditorLayer.cpp" />
+    <ClCompile Include="src\Panels\SceneHierarchyPanel.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Brain\Brain.vcxproj">

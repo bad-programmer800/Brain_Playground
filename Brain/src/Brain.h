@@ -7,6 +7,7 @@
 #include "Brain/Core/Application.h"
 #include "Brain/Core/Layer.h"
 #include "Brain/Core/Log.h"
+#include "Brain/Core/Assert.h"
 
 #include "Brain/Core/Timestep.h"
 
@@ -18,6 +19,7 @@
 #include "Brain/ImGui/ImGuiLayer.h"
 #include "Brain/Scene/Scene.h"
 #include "Brain/Scene/Entity.h"
+#include "Brain/Scene/ScriptableEntity.h"
 #include "Brain/Scene/Components.h"
 
 // ---Renderer------------------------

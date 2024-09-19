@@ -1430,6 +1430,9 @@
     <ClInclude Include="src\Brain\Scene\Entity.h" />
     <ClInclude Include="src\Brain\Renderer\Camera.h" />
     <ClInclude Include="src\Brain\Scene\SceneCamera.h" />
+    <ClInclude Include="src\Brain\Scene\ScriptableEntity.h" />
+    <ClInclude Include="src\Brain\Core\PlatformDetection.h" />
+    <ClInclude Include="src\Brain\Core\Assert.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brain\Core\Application.cpp">

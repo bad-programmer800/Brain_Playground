@@ -1,6 +1,6 @@
 #pragma once
 
-#include "brpch.h"
+#include <sstream>
 
 #include "Brain/Core/Base.h"
 #include "Brain/Events/Event.h"
