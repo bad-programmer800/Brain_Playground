@@ -27,11 +27,11 @@ namespace Brain
 		void SetPerspectiveFarClip(float farClip) { m_PerspectiveFar = farClip; RecalculateProjection(); }
 
 		float GetOrthographicSize() const { return m_OrthographicSize; }
-		void SetOrthorgraphicSize(float size) { m_OrthographicSize = size; RecalculateProjection(); }
+		void SetOrthographicSize(float size) { m_OrthographicSize = size; RecalculateProjection(); }
 		float GetOrthographicNearClip() const { return m_OrthographicNear; }
-		void SetOrthorgraphicNearClip(float nearClip) { m_OrthographicNear = nearClip; RecalculateProjection(); }
+		void SetOrthographicNearClip(float nearClip) { m_OrthographicNear = nearClip; RecalculateProjection(); }
 		float GetOrthographicFarClip() const { return m_OrthographicFar; }
-		void SetOrthorgraphicFarClip(float farClip) { m_OrthographicFar = farClip; RecalculateProjection(); }
+		void SetOrthographicFarClip(float farClip) { m_OrthographicFar = farClip; RecalculateProjection(); }
 
 		ProjectionType GetProjectionType() const { return m_ProjectionType; }
 		void SetProjectionType(ProjectionType type) { m_ProjectionType = type; RecalculateProjection(); }

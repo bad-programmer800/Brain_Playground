@@ -77,9 +77,9 @@ namespace Brain {
 		Event& m_Event;
 	};
 
-	inline std::string format_as(const Event& e) 
+	inline std::ostream& operator<<(std::ostream& os, const Event& e) 
 	{
-		return e.ToString();
+		return os << e.ToString();
 	}
 
 }

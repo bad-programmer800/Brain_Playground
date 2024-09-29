@@ -21,7 +21,7 @@ namespace Brain {
 	class KeyPressedEvent : public KeyEvent
 	{
 	public:
-		KeyPressedEvent(const KeyCode keycode, uint16_t repeatCount)
+		KeyPressedEvent(const KeyCode keycode, const uint16_t repeatCount)
 			: KeyEvent(keycode), m_RepeatCount(repeatCount) {}
 
 		uint16_t GetRepeatCount() const { return m_RepeatCount; }

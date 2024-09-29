@@ -1,5 +1,5 @@
 #include "brpch.h"
-#include"Scene.h"
+#include "Scene.h"
 
 #include "Components.h"
 #include "Brain/Renderer/Renderer2D.h"
@@ -72,7 +72,7 @@ namespace Brain
 			auto group = m_Registry.group<TransformComponent>(entt::get<SpriteRendererComponent>);
 			for (auto entity : group)
 			{
-				auto& [transform, sprite] = group.get<TransformComponent, SpriteRendererComponent>(entity);
+				auto [transform, sprite] = group.get<TransformComponent, SpriteRendererComponent>(entity);
 				Renderer2D::DrawQuad(transform.GetTransform(), sprite.Color);
 			}
 

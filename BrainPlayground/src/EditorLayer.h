@@ -34,7 +34,7 @@ namespace Brain {
 
 		Ref<Texture2D> m_CheckerboardTexture;
 		// OpenCV
-		Ref<Texture2D> m_cvSourceImageTexture;
+		// Ref<Texture2D> m_cvSourceImageTexture;
 		// END OpenCV
 
 		bool m_ViewportFocused = false, m_ViewportHovered = false;
