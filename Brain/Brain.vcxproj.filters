@@ -22,6 +22,9 @@
     <Filter Include="src\Brain\Renderer">
       <UniqueIdentifier>{2E8A7D7B-1A6E-3ED1-83CE-38246FD12853}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Brain\Scene">
+      <UniqueIdentifier>{A50045C3-118C-B287-1A9D-357C86A70E88}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
     </Filter>
@@ -63,6 +66,9 @@
     <ClInclude Include="src\Brain\Core\Application.h">
       <Filter>src\Brain\Core</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brain\Core\Assert.h">
+      <Filter>src\Brain\Core</Filter>
+    </ClInclude>
     <ClInclude Include="src\Brain\Core\Base.h">
       <Filter>src\Brain\Core</Filter>
     </ClInclude>
@@ -85,6 +91,9 @@
       <Filter>src\Brain\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Brain\Core\MouseCodes.h">
+      <Filter>src\Brain\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brain\Core\PlatformDetection.h">
       <Filter>src\Brain\Core</Filter>
     </ClInclude>
     <ClInclude Include="src\Brain\Core\Timestep.h">
@@ -112,6 +121,9 @@
       <Filter>src\Brain\ImGui</Filter>
     </ClInclude>
     <ClInclude Include="src\Brain\Renderer\Buffer.h">
+      <Filter>src\Brain\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brain\Renderer\Camera.h">
       <Filter>src\Brain\Renderer</Filter>
     </ClInclude>
     <ClInclude Include="src\Brain\Renderer\Framebuffer.h">
@@ -146,6 +158,24 @@
     </ClInclude>
     <ClInclude Include="src\Brain\Renderer\VertexArray.h">
       <Filter>src\Brain\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brain\Scene\Components.h">
+      <Filter>src\Brain\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brain\Scene\Entity.h">
+      <Filter>src\Brain\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brain\Scene\Scene.h">
+      <Filter>src\Brain\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brain\Scene\SceneCamera.h">
+      <Filter>src\Brain\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brain\Scene\SceneSerializer.h">
+      <Filter>src\Brain\Scene</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Brain\Scene\ScriptableEntity.h">
+      <Filter>src\Brain\Scene</Filter>
     </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
@@ -1425,14 +1455,6 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
-    <ClInclude Include="src\Brain\Scene\Scene.h" />
-    <ClInclude Include="src\Brain\Scene\Components.h" />
-    <ClInclude Include="src\Brain\Scene\Entity.h" />
-    <ClInclude Include="src\Brain\Renderer\Camera.h" />
-    <ClInclude Include="src\Brain\Scene\SceneCamera.h" />
-    <ClInclude Include="src\Brain\Scene\ScriptableEntity.h" />
-    <ClInclude Include="src\Brain\Core\PlatformDetection.h" />
-    <ClInclude Include="src\Brain\Core\Assert.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brain\Core\Application.cpp">
@@ -1492,6 +1514,18 @@
     <ClCompile Include="src\Brain\Renderer\VertexArray.cpp">
       <Filter>src\Brain\Renderer</Filter>
     </ClCompile>
+    <ClCompile Include="src\Brain\Scene\Entity.cpp">
+      <Filter>src\Brain\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Brain\Scene\Scene.cpp">
+      <Filter>src\Brain\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Brain\Scene\SceneCamera.cpp">
+      <Filter>src\Brain\Scene</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Brain\Scene\SceneSerializer.cpp">
+      <Filter>src\Brain\Scene</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\OpenGL\OpenGLBuffer.cpp">
       <Filter>src\Platform\OpenGL</Filter>
     </ClCompile>
@@ -1525,8 +1559,5 @@
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
-    <ClCompile Include="src\Brain\Scene\Scene.cpp" />
-    <ClCompile Include="src\Brain\Scene\Entity.cpp" />
-    <ClCompile Include="src\Brain\Scene\SceneCamera.cpp" />
   </ItemGroup>
 </Project>
