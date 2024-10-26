@@ -25,6 +25,7 @@ IncludeDir["glm"] = "%{wks.location}/Brain/vendor/glm"
 IncludeDir["stb_image"] = "%{wks.location}/Brain/vendor/stb_image"
 IncludeDir["entt"] = "%{wks.location}/Brain/vendor/entt/include"
 IncludeDir["yaml_cpp"] =  "%{wks.location}/Brain/vendor/yaml-cpp-master/include"
+IncludeDir["ImGuizmo"] =  "%{wks.location}/Brain/vendor/ImGuizmo-master"
 
 syslibdirs {"C:/opencv/build/x64/vc16/lib"}
 includedirs {"C:/opencv/build/include"}

@@ -18,6 +18,8 @@ project "Brain"
 		"vendor/stb_image/**.cpp",
 		"vendor/glm/glm/**.hpp",
 		"vendor/glm/glm/**.inl",
+		"vendor/ImGuizmo-master/ImGuizmo.h",
+		"vendor/ImGuizmo-master/ImGuizmo.cpp"
 	}
 
 	defines
@@ -37,7 +39,8 @@ project "Brain"
 		"%{IncludeDir.glm}",
 		"%{IncludeDir.stb_image}",
 		"%{IncludeDir.entt}",
-		"%{IncludeDir.yaml_cpp}"
+		"%{IncludeDir.yaml_cpp}",
+		"%{IncludeDir.ImGuizmo}"
 	}
 
 	links 
@@ -50,6 +53,9 @@ project "Brain"
 		"opengl32.lib"
 	}
 
+	filter "files:vendor/ImGuizmo-master/**.cpp"
+		flags {"NoPCH"}
+	
 	filter "system:windows"
 		systemversion "latest"
 

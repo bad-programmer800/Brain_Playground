@@ -19,7 +19,8 @@ project "BrainPlayground"
 		"%{wks.location}/Brain/src",
 		"%{wks.location}/Brain/vendor",
 		"%{IncludeDir.glm}",
-		"%{IncludeDir.entt}"
+		"%{IncludeDir.entt}",
+		"%{IncludeDir.ImGuizmo}"
 	}
 
 	links

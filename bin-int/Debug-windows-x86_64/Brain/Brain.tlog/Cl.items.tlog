@@ -5,7 +5,9 @@ C:\VS_Projects\Brain_Playground\Brain\src\Brain\Core\Log.cpp;C:\VS_Projects\Brai
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Core\Window.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\Window.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\ImGui\ImGuiBuild.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\ImGuiBuild.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\ImGui\ImGuiLayer.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\ImGuiLayer.obj
+C:\VS_Projects\Brain_Playground\Brain\src\Brain\Math\Math.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\Math.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\Buffer.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\Buffer.obj
+C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\EditorCamera.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\EditorCamera.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\Framebuffer.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\Framebuffer.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\GraphicsContext.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\GraphicsContext.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Brain\Renderer\OrthographicCamera.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\OrthographicCamera.obj
@@ -29,6 +31,8 @@ C:\VS_Projects\Brain_Playground\Brain\src\Platform\OpenGL\OpenGLShader.cpp;C:\VS
 C:\VS_Projects\Brain_Playground\Brain\src\Platform\OpenGL\OpenGLTexture.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\OpenGLTexture.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Platform\OpenGL\OpenGLVertexArray.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\OpenGLVertexArray.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Platform\Windows\WindowsInput.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\WindowsInput.obj
+C:\VS_Projects\Brain_Playground\Brain\src\Platform\Windows\WindowsPlatformUtils.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\WindowsPlatformUtils.obj
 C:\VS_Projects\Brain_Playground\Brain\src\Platform\Windows\WindowsWindow.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\WindowsWindow.obj
 C:\VS_Projects\Brain_Playground\Brain\src\brpch.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\brpch.obj
+C:\VS_Projects\Brain_Playground\Brain\vendor\ImGuizmo-master\ImGuizmo.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\ImGuizmo.obj
 C:\VS_Projects\Brain_Playground\Brain\vendor\stb_image\stb_image.cpp;C:\VS_Projects\Brain_Playground\bin-int\Debug-windows-x86_64\Brain\stb_image.obj

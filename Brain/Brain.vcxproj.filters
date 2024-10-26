@@ -19,11 +19,17 @@
     <Filter Include="src\Brain\ImGui">
       <UniqueIdentifier>{B20895C2-1E94-0287-27A5-857B93AF5E87}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src\Brain\Math">
+      <UniqueIdentifier>{61A78272-4D75-7678-3609-E79E227652DD}</UniqueIdentifier>
+    </Filter>
     <Filter Include="src\Brain\Renderer">
       <UniqueIdentifier>{2E8A7D7B-1A6E-3ED1-83CE-38246FD12853}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Brain\Scene">
       <UniqueIdentifier>{A50045C3-118C-B287-1A9D-357C86A70E88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Brain\Utils">
+      <UniqueIdentifier>{E89472C3-5420-E087-5D31-637CC93B3C88}</UniqueIdentifier>
     </Filter>
     <Filter Include="src\Platform">
       <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
@@ -36,6 +42,9 @@
     </Filter>
     <Filter Include="vendor">
       <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\ImGuizmo-master">
+      <UniqueIdentifier>{ECCD6034-D8C7-8986-C134-2097ADCDEFF2}</UniqueIdentifier>
     </Filter>
     <Filter Include="vendor\glm">
       <UniqueIdentifier>{829FC5A8-6E57-07F6-D75E-E051C335A2E6}</UniqueIdentifier>
@@ -120,6 +129,9 @@
     <ClInclude Include="src\Brain\ImGui\ImGuiLayer.h">
       <Filter>src\Brain\ImGui</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brain\Math\Math.h">
+      <Filter>src\Brain\Math</Filter>
+    </ClInclude>
     <ClInclude Include="src\Brain\Renderer\Buffer.h">
       <Filter>src\Brain\Renderer</Filter>
     </ClInclude>
@@ -177,6 +189,9 @@
     <ClInclude Include="src\Brain\Scene\ScriptableEntity.h">
       <Filter>src\Brain\Scene</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brain\Utils\PlatformUtils.h">
+      <Filter>src\Brain\Utils</Filter>
+    </ClInclude>
     <ClInclude Include="src\Platform\OpenGL\OpenGLBuffer.h">
       <Filter>src\Platform\OpenGL</Filter>
     </ClInclude>
@@ -203,6 +218,9 @@
     </ClInclude>
     <ClInclude Include="src\brpch.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="vendor\ImGuizmo-master\ImGuizmo.h">
+      <Filter>vendor\ImGuizmo-master</Filter>
     </ClInclude>
     <ClInclude Include="vendor\glm\glm\common.hpp">
       <Filter>vendor\glm\glm</Filter>
@@ -1455,6 +1473,7 @@
     <ClInclude Include="vendor\stb_image\stb_image.h">
       <Filter>vendor\stb_image</Filter>
     </ClInclude>
+    <ClInclude Include="src\Brain\Renderer\EditorCamera.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Brain\Core\Application.cpp">
@@ -1477,6 +1496,9 @@
     </ClCompile>
     <ClCompile Include="src\Brain\ImGui\ImGuiLayer.cpp">
       <Filter>src\Brain\ImGui</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Brain\Math\Math.cpp">
+      <Filter>src\Brain\Math</Filter>
     </ClCompile>
     <ClCompile Include="src\Brain\Renderer\Buffer.cpp">
       <Filter>src\Brain\Renderer</Filter>
@@ -1550,14 +1572,21 @@
     <ClCompile Include="src\Platform\Windows\WindowsInput.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
+    <ClCompile Include="src\Platform\Windows\WindowsPlatformUtils.cpp">
+      <Filter>src\Platform\Windows</Filter>
+    </ClCompile>
     <ClCompile Include="src\Platform\Windows\WindowsWindow.cpp">
       <Filter>src\Platform\Windows</Filter>
     </ClCompile>
     <ClCompile Include="src\brpch.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="vendor\ImGuizmo-master\ImGuizmo.cpp">
+      <Filter>vendor\ImGuizmo-master</Filter>
+    </ClCompile>
     <ClCompile Include="vendor\stb_image\stb_image.cpp">
       <Filter>vendor\stb_image</Filter>
     </ClCompile>
+    <ClCompile Include="src\Brain\Renderer\EditorCamera.cpp" />
   </ItemGroup>
 </Project>

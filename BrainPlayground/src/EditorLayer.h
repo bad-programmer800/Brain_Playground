@@ -2,6 +2,7 @@
 
 #include "Brain.h"
 #include "Panels/SceneHierarchyPanel.h"
+#include "Brain/Renderer/EditorCamera.h"
 
 namespace Brain {
 
@@ -17,6 +18,13 @@ namespace Brain {
 		void OnUpdate(Timestep ts) override;
 		virtual void OnImGuiRender() override;
 		void OnEvent(Event& e) override;
+
+	private:
+		bool OnKeyPressed(KeyPressedEvent& e);
+		void NewScene();
+		void OpenScene();
+		void SaveSceneAs();
+
 	private:
 		Brain::OrthographicCameraController m_CameraController;
 
@@ -32,6 +40,8 @@ namespace Brain {
 
 		bool m_PrimaryCamera = true;
 
+		EditorCamera m_EditorCamera;
+
 		Ref<Texture2D> m_CheckerboardTexture;
 		// OpenCV
 		// Ref<Texture2D> m_cvSourceImageTexture;
@@ -39,8 +49,11 @@ namespace Brain {
 
 		bool m_ViewportFocused = false, m_ViewportHovered = false;
 		glm::vec2 m_ViewportSize = { 0.0f, 0.0f };
+		glm::vec2 m_ViewportBounds[2];
 
 		glm::vec4 m_SquareColor = { 0.2f, 0.3f, 0.8f, 1.0f };
+
+		int m_GizmoType = -1;
 
 		// Panels
 		SceneHierarchyPanel m_SceneHierarchyPanel;

@@ -5,6 +5,7 @@
 #include "Brain/Renderer/Texture.h"
 
 #include "Brain/Renderer/Camera.h"
+#include "Brain/Renderer/EditorCamera.h"
 
 namespace Brain {
 
@@ -15,6 +16,7 @@ namespace Brain {
 		static void Shutdown();
 
 		static void BeginScene(const Camera& camera, const glm::mat4& transform);
+		static void BeginScene(const EditorCamera& camera);
 		static void BeginScene(const OrthographicCamera& camera);
 		static void EndScene();
 		static void Flush();
