@@ -17,7 +17,7 @@ namespace Brain
 		float nearClip, 
 		float farClip) : 
 		m_FOV(fov), 
-		m_AspectRation(aspectRatio),
+		m_AspectRatio(aspectRatio),
 		m_NearClip(nearClip), 
 		m_FarClip(farClip), 
 		Camera(glm::perspective(glm::radians(fov),
@@ -30,9 +30,9 @@ namespace Brain
 
 	void EditorCamera::UpdateProjection()
 	{
-		m_AspectRation = m_ViewportWidth / m_ViewportHeight;
+		m_AspectRatio = m_ViewportWidth / m_ViewportHeight;
 		m_Projection = glm::perspective(glm::radians(m_FOV),
-			m_AspectRation, m_NearClip, m_FarClip);
+			m_AspectRatio, m_NearClip, m_FarClip);
 	}
 
 	void EditorCamera::UpdateView()
@@ -52,13 +52,13 @@ namespace Brain
 		float x = std::min(m_ViewportWidth / 1000.0f, 2.4f);
 		float xFactor = 0.0366f * (x * x) - 0.1778f * x + 0.3021f;
 
-		float y = std::min(m_ViewportWidth / 1000.0f, 2.4f);
+		float y = std::min(m_ViewportHeight / 1000.0f, 2.4f);
 		float yFactor = 0.0366f * (y * y) - 0.1778f * y + 0.3021f;
 
 		return { xFactor, yFactor };
 	}
 
-	float EditorCamera::RotationSpeed() const 
+	float EditorCamera::RotationSpeed() const
 	{
 		return 0.8f;
 	}
@@ -148,10 +148,10 @@ namespace Brain
 
 	glm::vec3 EditorCamera::GetForwardDirection() const
 	{
-		return glm::rotate(GetOrientation(), glm::vec3(0.0f, 1.0f, -1.0f));
+		return glm::rotate(GetOrientation(), glm::vec3(0.0f, 0.0f, -1.0f));
 	}
 
-	glm::vec3& EditorCamera::CalculatePosition()
+	glm::vec3 EditorCamera::CalculatePosition() const
 	{
 		return m_FocalPoint - GetForwardDirection() * m_Distance;
 	}

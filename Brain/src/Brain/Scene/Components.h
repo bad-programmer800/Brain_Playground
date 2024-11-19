@@ -64,7 +64,7 @@ namespace Brain
 		ScriptableEntity* Instance = nullptr;
 
 		ScriptableEntity*(*InstantiateScript)();
-		void(*DestroyScript)(NativeScriptComponent*);
+		void (*DestroyScript)(NativeScriptComponent*);
 
 		template<typename T>
 		void Bind()

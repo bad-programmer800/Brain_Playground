@@ -1,5 +1,3 @@
-#pragma once
-
 // Platform detection using predefined macros
 #ifdef _WIN32
 	/* Windows x64/x86 */

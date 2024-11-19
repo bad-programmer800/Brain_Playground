@@ -34,7 +34,7 @@ namespace Brain
 		glm::vec3 GetUpDirection() const;
 		glm::vec3 GetRightDirection() const;
 		glm::vec3 GetForwardDirection() const;
-		glm::vec3 GetPosition() const { return m_Position; }
+		const glm::vec3& GetPosition() const { return m_Position; }
 		glm::quat GetOrientation() const;
 		float GetPitch() const { return m_Pitch; }
 		float GetYaw() const { return m_Yaw; }
@@ -49,7 +49,7 @@ namespace Brain
 		void MouseRotate(const glm::vec2& delta);
 		void MouseZoom(float delta);
 
-		glm::vec3& CalculatePosition();
+		glm::vec3 CalculatePosition() const;
 
 		std::pair<float, float> PanSpeed() const;
 		float RotationSpeed() const;
@@ -57,7 +57,7 @@ namespace Brain
 
 	private:
 		float m_FOV = 45.0f;
-		float m_AspectRation = 1.778f;
+		float m_AspectRatio = 1.778f;
 		float m_NearClip = 0.1f;
 		float m_FarClip = 1000.0f;
 
